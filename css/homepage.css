@@ -1,0 +1,21 @@
+/* Kun til index.html */
+#about p, #news p, #contact p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+#news .grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.news-card {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.news-card h3 {
+  margin-top: 0;
+  color: #ff8c00;
+}
