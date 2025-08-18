@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CollectraHub</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/homepage.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/artists.css"/>
 </head>
 <body>
-
-  <!-- Topbar -->
   <header class="topbar">
     <nav>
       <ul>
@@ -25,44 +22,48 @@
     </nav>
   </header>
 
-    <div class="page-header">
-      <h1>CollectraHub</h1>
-    </div>
+  <div class="page-header">
+    <h1>CollectraHub</h1>
+  </div>
 
-  <main>
+  <main class="container">
     <!-- About Section -->
-    <section id="about" class="container">
-      <h1>About</h1>
-      <p>CollectraHub is a central hub for music artists, DJs, producers, and visual creatives. 
-      Our mission is to connect and showcase talent while providing a collaborative space for inspiration and events.</p>
+    <section id="about">
+      <h2>About</h2>
+      <p>CollectraHub is a hub for artists, producers, DJs, and visual creatives. We connect talents and events to create unique experiences.</p>
     </section>
 
     <!-- News Section -->
-    <section id="news" class="container">
-  <h2>Latest News</h2>
-  <div class="grid" id="latest-news">
-    <!-- Nyhederne indsættes her via JS -->
-  </div>
-  <p><a href="news.html">See all news</a></p>
-</section>
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="container">
-      <h1>Contact</h1>
-      <p>Email: <a href="mailto:collectrahub@gmail.com">collectrahub@gmail.com</a></p>
-      <p>Follow us on social media:</p>
-      <p>
-        <a href="#"><i class="fab fa-instagram"></i> Instagram</a> | 
-        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
-      </p>
+    <section id="news">
+      <h2>News</h2>
+      <div class="news-container" id="index-news-container">
+        <!-- Nyheder fyldes via JS -->
+      </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:collectrahub@example.com">collectrahub@example.com</a></p>
+    </section>
   </main>
 
   <footer>
     <p>© 2025 CollectraHub</p>
   </footer>
-<script src="js/news.js"></script>
+
+  <!-- JS for at fylde nyheder -->
+  <script src="js/newsData.js"></script>
+  <script src="js/news.js"></script>
+  <script>
+    // Fylder kun forsiden med de nyeste 3-4 nyheder
+    const indexContainer = document.getElementById("index-news-container");
+    if(indexContainer && typeof createNewsItem === 'function') {
+      const latestNews = newsData.slice(0, 4); // de nyeste
+      latestNews.forEach(news => {
+        indexContainer.appendChild(createNewsItem(news));
+      });
+    }
+  </script>
 </body>
 </html>

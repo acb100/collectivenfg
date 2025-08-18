@@ -1,70 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NYT NAVN - Collective NFG</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="../css/style.css"/>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/artists.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
   <!-- Topbar -->
   <header class="topbar">
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="artists.html">Artists</a></li>
         <li><a href="producers.html">Producers</a></li>
         <li><a href="djs.html">DJs</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="news.html">News</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-
+        <li><a href="../index.html#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main Content -->
-  <main class="container">
-    <!-- Bio -->
-    <section class="bio">
-      <h1>NYT NAVN</h1>
-      <p>NYT NAVN is a personal project from the electronic artist behind <a href="shrooma.html">Shrooma</a>, known for psytrance. While Shrooma dives into high-energy, hypnotic beats, NYT NAVN explores trance and electronica in a more experimental, immersive way.</p>
-      <p>Tracks often start with a simple idea – a loop, a beat, a mood – and grow into danceable, immersive pieces. Each track is designed to be felt as much as it is heard, whether alone with headphones or together on the dancefloor.</p>
-      <p>NYT NAVN thrives on experimentation, letting sound lead the way and embracing unexpected textures and twists. Covers, visuals, and other artistic elements are evolving, but the music itself remains the centerpiece: expressive, dynamic, and ready to move its audience.</p>
-    </section>
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>NYT NAVN</h1>
+  </div>
 
-    <!-- Music -->
-    <section class="music">
-      <h2>Listen</h2>
-      <iframe src="https://open.spotify.com/embed/artist/42TDTONjEWAzrDD1X8QwWL?utm_source=generator&theme=0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <iframe src="APPLE_MUSIC_EMBED_LINK" allow="autoplay *; encrypted-media *;" frameborder="0"></iframe>
-    </section>
+  <!-- Artist Container -->
+  <main class="artist-container">
 
-    <!-- Presskit -->
-    <section class="presskit">
-      <h2>Press Kit & Images</h2>
-      <p>Download the full press kit or view images below:</p>
-      <div class="press-images">
-        <a href="/assets/presskits/nytNavn.pdf" download><i class="fas fa-file-pdf"></i> Download Press Kit</a>
+    <!-- Modules -->
+    <div class="artist-modules">
+      
+      <!-- Music Module -->
+      <div class="module">
+        <h3>Music</h3>
+        <a href="https://open.spotify.com/artist/..." target="_blank">Spotify</a>
+        <a href="https://music.apple.com/artist/..." target="_blank">Apple Music</a>
       </div>
-    </section>
 
-    <!-- Contact -->
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:collectivenfg@gmail.com">collectivenfg@gmail.com</a></p>
-      <p>Follow on social media: <a href="https://www.instagram.com/anrsnfg" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></p>
-    </section>
+      <!-- Social Module -->
+      <div class="module">
+        <h3>Social</h3>
+        <a href="https://www.instagram.com/anrsnfg" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://soundcloud.com/..." target="_blank"><i class="fab fa-soundcloud"></i> SoundCloud</a>
+      </div>
+
+      <!-- Press Kit Module -->
+      <div class="module">
+        <h3>Press Kit</h3>
+        <a href="../assets/presskits/nytNavn.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Download PDF</a>
+        <img src="../assets/images/nytnavn.jpeg" alt="Promo Image" style="width:100%; border-radius:5px; margin-top:10px;">
+      </div>
+
+    </div> <!-- end artist-modules -->
+
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 NYT NAVN</p>
+    <p>© 2025 NYT NAVN / Collective NFG</p>
   </footer>
-
 </body>
 </html>
