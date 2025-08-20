@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    /* ========== Contact Page Specific Styles ========== */
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contact-box {
+      background-color: #1f1f1f;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .contact-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    .contact-box h2 {
+      color: #1db954;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    .contact-box form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-box input,
+    .contact-box textarea {
+      padding: 12px 15px;
+      border: none;
+      border-radius: 8px;
+      background-color: #2a2a2a;
+      color: #fff;
+      font-size: 1rem;
+      resize: none;
+    }
+
+    .contact-box input:focus,
+    .contact-box textarea:focus {
+      outline: 2px solid #1db954;
+    }
+
+    .contact-box button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #1db954;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact-box button:hover {
+      background-color: #17a447;
+    }
+
+    @media screen and (max-width: 768px) {
+      .contact-container {
+        padding: 20px 15px;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="producers.html">Producers</a></li>
+        <li><a href="djs.html">DJs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1>Contact</h1>
+    <p>To apply for a collaboration, please fill out the form below.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container contact-container">
+
+    <!-- Contact Form Box -->
+    <div class="contact-box">
+      <h2>Send a Message</h2>
+      <form action="https://formspree.io/f/xyzpqlbw" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <!-- Other Contact Info Box -->
+    <div class="contact-box">
+      <h2>Other ways to find us</h2>
+      <p>Email: <a href="mailto:collectivenfg@gmail.com" style="color:#1db954;">nfgcollective@gmail.com</a></p>
+      <p>Instagram: <a href="https://instagram.com/collectivenfg" style="color:#1db954;">@collectivenfg</a></p>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 CollectraHub
+  </footer>
+
+</body>
+</html>
